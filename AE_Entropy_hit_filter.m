@@ -6,17 +6,13 @@ clc; clear all;
 disp(datetime('now'));
 
 % Specify all file locations here for convenience. 
-% AEfilename_root = 'D:\TDA Project\Phase 2 Option\Tests\CTAA04_020419\AE\';
-% AEfilename_root = 'D:\TDA Project\Phase 2 Option\Tests\CTAA05_020519\AE\';
-% AEfilename_root = 'D:\TDA Project\Phase 2 Option\Tests\CTAA06_020619\AE\';
-% AEfilename_root = 'D:\TDA Project\Phase 2 Option\Tests\CTAA07_020619\AE\';
-AEfilename_root = 'C:\Users\foadkrmn\Documents\Foad\TDA\CTAA08_020719\AE\';
+AEfilename_root = '~\AE\';
 
 % Specify number of Para data files for each test.
-para_num = 8; % CTAA04: 10 -- CTAA05: 1 -- CTAA06: 2 -- CTAA07: 2 -- CTAA08: 8 
+para_num = 8; 
               
 % Define maximum load to be used in hit load filtering
-maxload = 3.5472; % CTAA04: 2.440 -- CTAA05: 3.317 -- CTAA06: 3.224 -- CTAA07: 3.224 -- CTAA08: 3.5472
+maxload = 3.5472;
 
 % Define Delta T value to be used in hit Delta T filtering
 deltaT = 10e-6; 
@@ -27,7 +23,6 @@ fileID2 = fopen([AEfilename_root,'Results\Ch2_load_deltaT_filtered.txt'],'w');
 
 % Set the limits for figures axises
 limit_load = [0 inf 0 maxload*1.1];
-% limit_ent = [0 inf 2.2 7];
 
 % Importing AE data
 disp('Importing AE data ...')
