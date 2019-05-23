@@ -4,20 +4,15 @@ clc; clear all;
 disp(datetime('now'));
 
 % Specify all file locations here for convenience. 
-% AEfilename_root = 'G:\My Drive\Research\Fatigue on composites (with Dr Modarres)\TDA Project\Phase 2 Option\Tests\CTAA04_020419\AE\';
-% AEfilename_root = 'G:\My Drive\Research\Fatigue on composites (with Dr Modarres)\TDA Project\Phase 2 Option\Tests\CTAA07_020619\AE\';
-AEfilename_root = 'G:\My Drive\Research\Fatigue on composites (with Dr Modarres)\TDA Project\Phase 2 Option\Tests\CTAA08_020719\AE\';
+AEfilename_root = '~\AE\';
 
-% Instfilename = 'G:\My Drive\Research\Fatigue on composites (with Dr Modarres)\TDA Project\Phase 2 Option\Tests\CTAA04_020419\Instron\Test2\Test2.steps.tracking.csv';
-% Instfilename = 'G:\My Drive\Research\Fatigue on composites (with Dr Modarres)\TDA Project\Phase 2 Option\Tests\CTAA07_020619\Instron\Test2\Test2.steps.tracking.csv';
-Instfilename = 'G:\My Drive\Research\Fatigue on composites (with Dr Modarres)\TDA Project\Phase 2 Option\Tests\CTAA08_020719\Instron\Test2\Test2.steps.tracking.csv';
+Instfilename = '~\Instron\Test2\Test2.steps.tracking.csv';
 
 % Specify number of Para data files for each test.
-para_num = 8; % CTAA04: 10 -- CTAA07: 2 -- CTAA08: 8 
+para_num = 8; 
               
 % Lower bound used to find match points in AE and Instron data
-% LB = 1; LB2 = 1.9; 
-LB = 1; LB2 = 3; % CTAA08
+LB = 1; LB2 = 3;
 
 fileID = fopen([AEfilename_root,'Results\Para_Modified.txt'],'w');
 fileID2 = fopen([AEfilename_root,'Results\Para_hit.txt'],'w'); % keep hit correction time and cycles data here
