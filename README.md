@@ -22,4 +22,7 @@ In summary, each of the codes address a specific issue:
 
 ---------> A sample result from this code is shown in images "Load vs. Time (Raw data)"  and "Load vs. Time (Matched data)".
 
+
 2- AE_Entropy_hit_filter: This code uses the modified AE dataset generated from previous code. It separates data points recorded from both AE sensors and remove unrelated data to damage by comparing them. Simply, this code addresses issues number 2 and 3.
+
+---------> A sample result from this code is shown in images "Raw AE hit data"  and "Load and Delta T filtered AE hit data".
